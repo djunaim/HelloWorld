@@ -6,27 +6,27 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Howdy Y'all!");
-            //Console.ReadLine();
+            Console.WriteLine("Howdy Y'all!");
+            Console.ReadLine();
 
-            //var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Cat" };
+            var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Cat" };
 
-            //foreach(var animal in animals)
-            //{
-            //    var vowelCount = 0;
-            //    foreach (var currentChar in animal)
-            //    {
-            //        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u')
-            //        {
-            //            vowelCount += 1;
-            //        }
-            //    }
-            //    if (vowelCount >= 2 )
-            //    {
-            //        Console.WriteLine(animal);
-            //        Console.ReadKey();
-            //    }
-            //}
+            foreach (var animal in animals)
+            {
+                var vowelCount = 0;
+                foreach (var currentChar in animal)
+                {
+                    if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u')
+                    {
+                        vowelCount += 1;
+                    }
+                }
+                if (vowelCount >= 2)
+                {
+                    Console.WriteLine(animal);
+                    Console.ReadKey();
+                }
+            }
 
             Console.WriteLine($"Please choose one: {args[0]}, {args[1]}, {args[2]}");
 
