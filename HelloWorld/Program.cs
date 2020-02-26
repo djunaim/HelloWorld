@@ -9,6 +9,14 @@ namespace HelloWorld
             Console.WriteLine("Howdy Y'all!");
             Console.ReadLine();
 
+            Console.WriteLine("Hi, write your name and press enter");
+            var userName = Console.ReadLine();
+            Console.WriteLine($"Hi, {userName}");
+            Console.ReadLine();
+
+            Console.WriteLine($"{userName}, what is your favorite color?");
+            var userColor = Console.ReadLine();
+
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Cat" };
 
             foreach (var animal in animals)
@@ -23,26 +31,27 @@ namespace HelloWorld
                 }
                 if (vowelCount >= 2)
                 {
-                    Console.WriteLine(animal);
+                    Console.WriteLine($"Would you like to have a {userColor} {animal}?");
                     Console.ReadKey();
                 }
             }
 
-            Console.WriteLine($"Please choose one: {args[0]}, {args[1]}, {args[2]}");
+            //Console.WriteLine($"Please choose one: {args[0]}, {args[1]}, {args[2]}");
 
-            var userEntry = Console.ReadLine();
+            //var userEntry = Console.ReadLine();
 
-            if (userEntry == args[0] || userEntry == args[1] || userEntry == args[2])
-            {
-                Console.WriteLine("you got it");
-                Console.ReadLine();
-            }
-            //if (userEntry != args[0] || userEntry != args[1] || userEntry != args[2])
-            else
-            {
-                Console.WriteLine("try again");
-                Console.ReadLine();
-            }
+            //if (userEntry == args[0] || userEntry == args[1] || userEntry == args[2])
+            //{
+            //    Console.WriteLine("you got it");
+            //    Console.ReadLine();
+            //}
+            ////if (userEntry != args[0] || userEntry != args[1] || userEntry != args[2])
+            //else
+            //{
+            //    Console.WriteLine("try again");
+            //    Console.ReadLine();
+            //}
+
         }
     }
 }
